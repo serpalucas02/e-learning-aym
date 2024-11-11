@@ -1,0 +1,71 @@
+{
+    "rankingCursos": [
+        {
+            "id": 1,
+            "nombre": "Curso de React",
+            "descripcion": "Aprende React desde cero",
+            "promedioEstrellas": 4.5,
+            "reseñas": [
+                { "usuario": "Juan", "comentario": "Excelente curso, muy completo y bien explicado.", "estrellas": 5 },
+                { "usuario": "María", "comentario": "Buen curso, aunque algunas partes podrían mejorar.", "estrellas": 4 }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Curso de Node.js",
+            "descripcion": "Desarrollo backend con Node.js",
+            "promedioEstrellas": 4.0,
+            "reseñas": [
+                { "usuario": "Pedro", "comentario": "Muy útil y práctico para empezar en Node.js.", "estrellas": 4 },
+                { "usuario": "Laura", "comentario": "Faltan algunos ejemplos avanzados, pero está bien.", "estrellas": 4 }
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Curso de JavaScript Avanzado",
+            "descripcion": "Profundiza en JavaScript",
+            "promedioEstrellas": 5,
+            "reseñas": [
+                { "usuario": "Ana", "comentario": "El mejor curso de JavaScript que he tomado.", "estrellas": 5 },
+                { "usuario": "Carlos", "comentario": "Excelente contenido y explicaciones claras.", "estrellas": 4 }
+            ]
+        }
+    ],
+    "historialCursos": [
+        { "id": 1, "nombre": "Curso de HTML y CSS", "completado": true, "progreso": 100 },
+        { "id": 2, "nombre": "Curso de JavaScript Básico", "completado": false, "progreso": 45 },
+        { "id": 3, "nombre": "Curso de Python para Principiantes", "completado": false, "progreso": 75 }
+    ],
+    "preguntasFrecuentes": [
+        {
+            "id": 1,
+            "pregunta": "¿Cómo accedo a los cursos?",
+            "respuesta": "Puedes acceder a los cursos desde tu perfil en la plataforma. Una vez hayas iniciado sesión, dirígete a 'Mis Cursos', donde verás los cursos que has adquirido o en los que te has inscrito. Haz clic en el curso deseado para comenzar."
+        },
+        {
+            "id": 2,
+            "pregunta": "¿Puedo obtener un certificado?",
+            "respuesta": "Sí, al completar un curso recibirás un certificado digital que podrás descargar y compartir. Este certificado refleja que has completado todos los módulos y evaluaciones del curso."
+        },
+        {
+            "id": 3,
+            "pregunta": "¿Hay soporte para dudas?",
+            "respuesta": "Sí, puedes contactar al instructor en la sección de soporte del curso. También puedes acceder al foro de la comunidad para discutir temas relacionados y resolver tus dudas con otros estudiantes."
+        },
+        {
+            "id": 4,
+            "pregunta": "¿Puedo acceder a los cursos en dispositivos móviles?",
+            "respuesta": "Sí, nuestra plataforma es compatible con dispositivos móviles. Puedes acceder a los cursos desde tu navegador móvil o mediante nuestra aplicación, disponible en iOS y Android."
+        },
+        {
+            "id": 5,
+            "pregunta": "¿Los cursos tienen límite de tiempo para completarlos?",
+            "respuesta": "No, los cursos son de acceso vitalicio. Una vez que te inscribes, podrás acceder a ellos en cualquier momento y revisarlos tantas veces como desees sin límite de tiempo."
+        },
+        {
+            "id": 6,
+            "pregunta": "¿Qué formas de pago están disponibles?",
+            "respuesta": "Aceptamos varias formas de pago, incluyendo tarjetas de crédito, PayPal, y transferencias bancarias en algunos países. Consulta las opciones de pago en la página de checkout para ver los métodos disponibles en tu región."
+        }
+    ]
+}

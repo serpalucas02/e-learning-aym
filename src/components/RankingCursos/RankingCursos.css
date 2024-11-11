@@ -1,0 +1,89 @@
+.titulo-ranking {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4a90e2;
+    margin: 2rem;
+    text-align: center;
+}
+
+.ranking-list {
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+.ranking-item {
+    padding: 15px;
+    background-color: #ffefcc;
+    border: 1px solid #ffdb99;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.ranking-item:hover {
+    background-color: #ffebbb;
+}
+
+.estrellas {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bi-star-fill, .bi-star, .bi-star-half {
+    color: #f5c518;
+    margin-right: 4px;
+}
+
+.promedio {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-icon {
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.reseñas-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reseña-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #4a90e2;
+}
+
+.title-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}

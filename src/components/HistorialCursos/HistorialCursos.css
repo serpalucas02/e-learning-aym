@@ -1,0 +1,73 @@
+.container-title-historial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.title-historial {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #4a90e2;
+    margin: 2rem;
+    text-align: center;
+}
+
+.historial-list {
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+.historial-item {
+    background-color: #e3f8ff;
+    padding: 15px;
+    border: 1px solid #b8e3f0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.progreso-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.progreso-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #cce7f8;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.progreso-fill {
+    height: 100%;
+    background-color: #6cc3e6;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.3s ease;
+}
+
+.progreso-porcentaje {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.boton-reanudar {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #6cb2eb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-reanudar:hover {
+    background-color: #5a9fda;
+}
+
+.icono-completado {
+    font-size: 1.5em;
+    color: #28a745;
+}
