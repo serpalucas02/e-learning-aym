@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f9fa;
+    color: #4a4a4a;
+}
+
 .titulo-faq {
     font-size: 1.8em;
     font-weight: bold;
@@ -51,4 +62,12 @@
 
 .arrow.rotate {
     transform: rotate(180deg);
+}
+
+.faq-container-title {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+    border: none;
+    border-top: 1px solid #e0e0e0;
 }

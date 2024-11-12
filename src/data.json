@@ -4,7 +4,6 @@
             "id": 1,
             "nombre": "Curso de React",
             "descripcion": "Aprende React desde cero",
-            "promedioEstrellas": 4.5,
             "reseñas": [
                 { "usuario": "Juan", "comentario": "Excelente curso, muy completo y bien explicado.", "estrellas": 5 },
                 { "usuario": "María", "comentario": "Buen curso, aunque algunas partes podrían mejorar.", "estrellas": 4 }
@@ -14,20 +13,18 @@
             "id": 2,
             "nombre": "Curso de Node.js",
             "descripcion": "Desarrollo backend con Node.js",
-            "promedioEstrellas": 4.0,
             "reseñas": [
                 { "usuario": "Pedro", "comentario": "Muy útil y práctico para empezar en Node.js.", "estrellas": 4 },
-                { "usuario": "Laura", "comentario": "Faltan algunos ejemplos avanzados, pero está bien.", "estrellas": 4 }
+                { "usuario": "Laura", "comentario": "Faltan algunos ejemplos avanzados, pero está bien.", "estrellas": 3 }
             ]
         },
         {
             "id": 3,
             "nombre": "Curso de JavaScript Avanzado",
             "descripcion": "Profundiza en JavaScript",
-            "promedioEstrellas": 5,
             "reseñas": [
                 { "usuario": "Ana", "comentario": "El mejor curso de JavaScript que he tomado.", "estrellas": 5 },
-                { "usuario": "Carlos", "comentario": "Excelente contenido y explicaciones claras.", "estrellas": 4 }
+                { "usuario": "Carlos", "comentario": "Excelente contenido y explicaciones claras.", "estrellas": 5 }
             ]
         }
     ],

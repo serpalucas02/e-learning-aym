@@ -3,7 +3,6 @@ import data from '../../data.json';
 import './RankingCursos.css';
 
 const RankingCursos = () => {
-    const { rankingCursos } = data;
     const [selectedCurso, setSelectedCurso] = useState(null);
 
     const openModal = (curso) => {
@@ -12,6 +11,12 @@ const RankingCursos = () => {
 
     const closeModal = () => {
         setSelectedCurso(null);
+    };
+
+    const calcularPromedioEstrellas = (reseñas) => {
+        if (reseñas.length === 0) return 0;
+        const totalEstrellas = reseñas.reduce((acc, reseña) => acc + reseña.estrellas, 0);
+        return totalEstrellas / reseñas.length;
     };
 
     const renderEstrellas = (promedio) => {
@@ -31,19 +36,31 @@ const RankingCursos = () => {
         );
     };
 
+    const cursosOrdenados = [...data.rankingCursos].sort((a, b) => {
+        const promedioA = calcularPromedioEstrellas(a.reseñas);
+        const promedioB = calcularPromedioEstrellas(b.reseñas);
+        return promedioB - promedioA;
+    });
+
     return (
-        <div>
+        <>
             <h2 className="titulo-ranking">Ranking de Cursos</h2>
             <ul className="ranking-list">
-                {rankingCursos.map((curso) => (
-                    <li key={curso.id} className="ranking-item" onClick={() => openModal(curso)}>
-                        <h3>{curso.nombre}</h3>
-                        <p>{curso.descripcion}</p>
-                        <div className="estrellas-container">
-                            {renderEstrellas(curso.promedioEstrellas)}
+                {cursosOrdenados.map((curso, index) => {
+                    const promedioEstrellas = calcularPromedioEstrellas(curso.reseñas);
+                    return (
+                        <div key={curso.id} className='ranking-container'>
+                            <li className="ranking-item" onClick={() => openModal(curso)}>
+                                <span className="ranking-numero">{index + 1}</span>
+                                <h3>{curso.nombre}</h3>
+                                <p>{curso.descripcion}</p>
+                                <div className="estrellas-container">
+                                    {renderEstrellas(promedioEstrellas)}
+                                </div>
+                            </li>
                         </div>
-                    </li>
-                ))}
+                    );
+                })}
             </ul>
 
             {selectedCurso && (
@@ -67,7 +84,7 @@ const RankingCursos = () => {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     );
 };
 

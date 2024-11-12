@@ -1,15 +1,21 @@
 import React from 'react';
 import data from '../../data.json';
 import './HistorialCursos.css';
+import Navbar from '../Navbar/Navbar';
 
 const HistorialCursos = () => {
-    const { historialCursos } = data;
+    const historialCursosOrdenado = [...data.historialCursos].sort((a, b) => {
+        if (a.completado && !b.completado) return -1;
+        if (!a.completado && b.completado) return 1;
+        return b.progreso - a.progreso;
+    });
 
     return (
-        <div>
+        <>
+            <Navbar />
             <h2 className='title-historial'>Historial de Cursos</h2>
             <ul className="historial-list">
-                {historialCursos.map(curso => (
+                {historialCursosOrdenado.map(curso => (
                     <li key={curso.id} className="historial-item">
                         <div className="container-title-historial">
                             <h3>{curso.nombre}</h3>
@@ -31,7 +37,7 @@ const HistorialCursos = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </>
     );
 };
 

@@ -20,8 +20,10 @@ const PreguntasFrecuentes = () => {
     }, [openIndex]);
 
     return (
-        <div>
-            <h2 className="titulo-faq">Preguntas Frecuentes</h2>
+        <>
+            <div className="faq-container-title">
+                <h2 className='titulo-faq'>Preguntas Frecuentes</h2>
+            </div>
             <ul className="preguntas-list">
                 {preguntasFrecuentes.map((pregunta, index) => (
                     <li key={pregunta.id} className="pregunta-item" onClick={() => toggleRespuesta(index)}>
@@ -38,7 +40,7 @@ const PreguntasFrecuentes = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </>
     );
 };
 
